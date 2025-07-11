@@ -1,0 +1,245 @@
+Operators_Questions:
+=======================
+
+1) Write a program to print 15,5,2 and 0 ,use the appropriate operator
+
+a = 10
+b = 5
+
+mul=a*b
+print(mul)
+
+print(b)
+
+q= a//b
+print(q)
+
+r=a%b
+print(r)
+
+
+
+2) write a code to print 9 , use the appropriate operator
+a = 3
+b = 2
+
+c=a**b
+print(c)
+
+
+3) write a code to print 2 , 2.25 and 1 , use the appropriate operator
+
+x = 9
+y = 4
+
+c=x//y
+print(c)
+
+c=x/y
+print(c)
+
+c=x%y
+print(c)
+
+
+4) write a code print True ,use the appropriate operator
+
+a = 10
+b = 5
+
+print(a>=b)
+
+5) write a code print False
+
+a = 15
+b = 15 
+
+print(a!=b)
+
+6) write a code print True
+
+a = 24
+b = 24
+
+print(a==b)
+
+7) write a code print True
+
+a = "python"
+b = "python"
+
+print(a==b)
+
+8) write a code print false using and operator
+
+a = 10 
+b = 20
+
+
+9) write a code print True using or operator
+
+a = 20
+b = 10 
+
+10) write a code print True using Not operator
+
+a = 20
+b = 10 
+
+
+Conditional_Statements_Questions
+=================================
+
+1) Write a program to find given number is odd or even 
+x = 45
+
+y=x%2
+
+if(y!=0):
+ print('even')
+
+
+2) Write a program to find the given year is leap year or not
+year = 2020
+
+r=year%4
+
+if(r==0)
+ print(year, 'is leap year')
+
+
+3) Write a program to print "You can Vote" or "You Cannot Vote
+
+age=int(input('Enter your age:'))
+
+if age>=21:
+  print('You Can Vote')
+else
+  print('You Cannot Vote')
+
+
+4) Write a program to find greatest of three numbers
+
+
+a=input('Enter a value:')
+b=input('Enter b value:')
+c=input('Enter c value:')
+
+if(a>b and a>c):
+  print(a, 'is greatest')
+elif(b>a and b>c):
+  print(b, 'is greatest')
+else
+  print(c, 'is greatest')
+
+
+5) Write a program to print "Super" if the sum of number is "less" than 1000 and "great" if the sum of number is greater than 1000
+
+a=int(input('Enter a value:'))
+b=int(input('Enter b value:'))
+
+sum=a+b
+
+if(sum<1000)
+ print('Super')
+else
+ print('Great')
+
+
+Functions Questions
+===================
+
+
+
+Eg: Write a function to hours to minutes , user should able to give hours as input
+
+
+
+def hrstominscalc(x):
+    y = x*60
+    print(x,"hours equals to",y,"minutes")
+hrstominscalc(2)
+
+Output: 2 hours equals to 120 minutes
+
+
+1) Write a function to convert centimeter to meter , user should be able to give centimeter as input
+
+def cmtomet(x):
+    y=x/100
+    print(x,"centimeters equal to",y,"meters")
+
+
+
+2) Write a function to convert miles to Kilometer , user should be able to give miles as input
+
+def milestokms(x):
+    y=x*1.5
+    print(x,"miles equal to",y,"kilometers")
+
+
+3) Write a function to convert pounds to Kilogram , user should be able to give pounds as input
+
+def poundstokg(x):
+    y=x*0.45 
+    print(x,"pounds equal to",y,"kilograms")
+
+4) Write a function to calculate simple interest # all input should be given by the user
+
+p=input("Enter principle amount:")
+n=input("Enter number of years:")
+r=float(input("Enter rate of interest:"))
+
+def simpleint(p,n,r):
+    x=p*n*r/100
+    print(x)
+
+
+5) Write a function to calculate area of circle
+
+r=input("Enter the radius of the circle:")
+
+def  areaofcircle(r):
+     a=3.14*r*r
+     print("Area of cicle is ",a,"centimeters")
+
+6) Write a function to calculate circumference of circle
+
+r=input("Enter the radius of the circle:")
+
+def  circumofcircle(r):
+     c=2*3.14*r
+     print("Circumference of cicle is ",c,"centimeters")
+
+
+
+
+7) Write a function to calculate perimeter of square
+
+a=input("Enter the a value:")
+
+def periofsquare(a)
+    p=4*a
+    print(p)
+    
+
+
+8) Write a fucntion to calculate area of square
+
+a=input("Enter the a value:")
+
+def areaofsquare(a):
+    area=a*a
+    print(area)
+
+
+
+
+9) Write a function to area of triangle
+
+b=input("Enter base of the triangle:")
+h=input("Enter height of the triangle:")
+
+def areaoftriangle(b,h):
+    area=0.5*b*h
+    print(area)
