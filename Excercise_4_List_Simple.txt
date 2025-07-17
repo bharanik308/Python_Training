@@ -1,0 +1,252 @@
+List_Simple:
+=============
+
+
+1. Write a Python program to check whether the list is empty or not.
+
+x=[]
+if len(x)==0:
+ print("List is empty")
+else:
+ print("List is not empty")
+
+Alternative:
+if not x:
+    print("List is empty")
+
+
+2. Write a Python program to access the index of all the elements in a list.
+    Data:
+    x = [5, 15, 35, 8, 98]
+    Expected Output:
+    0 5
+    1 15
+    2 35
+    3 8
+    4 98
+
+   for i in x:
+     print(x.index(i), x[i])
+
+
+3. Write a Python program to convert a list of characters into a string.
+
+    Data:    x = ['a', 'b', 'c', 'd']
+    Expected Output:    abcd
+
+    y = ''.join(x)
+    print(y)
+
+4. Write a Python program to find the index of specified item in a list.
+
+    Data:    x = [10, 30, 4, -6]
+    Expected Output:    Index of 4 is 2 
+
+    for i in x:
+      print("Index of",x[2], is x.index(4))
+
+5. Write a Python program to print the sum of all the items in a list.
+
+    Data:    lt = [1, 2, -8]
+    Expected Output:    sum is -5 
+     
+    total=0
+
+    for i in lt:
+     total=total+i
+    print("sum is: ",total)
+
+6. Write a Python program to multiply all the items in a list.
+
+    Data:    [1, 2, -8]
+    Expected Output:    -16
+    
+    mul=1
+
+    for i in [1,2,-8]:
+       mul=mul*i
+    print(mul)
+
+7. Write a Python program to get the largest number from a list.
+
+    Data:    [1, 2, -8, 0]
+    Expected Output:    2 
+    
+    n=[1,2,-8,0]
+    largest=n[0]
+
+    for i in n:
+      if i>largest:
+        largest=i
+    print("largest number is: ",largest)
+  
+    
+    
+    
+ 
+8. Write a Python program to get the smallest number from a list.
+
+    Data:    [1, 2, -8, 0]
+    Expected Output:    -8
+     
+    n=[1,2,-8,0]
+    smallest=n[0]
+
+    for i in n:
+      if i<smallest:
+        smallest=i
+    print("smallest number is: ",smallest)
+
+
+9. Write a Python program to remove duplicate items from a list.
+
+    Data:    a = [10,20,30,20,10,50,60,40,80,50,40]
+    Expected Output:    [10, 20, 30, 50, 60, 40, 80] 
+    
+    unique = []
+    for i in a:
+        if i not in unique:
+           unique.append(i)
+    print(unique)
+
+
+    
+10. Write a Python program to clone or copy a list.
+
+    Data:    x = [10, 22, 44, 23, 4]
+
+    Expected Output:
+
+    X - [10, 22, 44, 23, 4]
+    Y - [10, 22, 44, 23, 4] 
+
+    y=x.copy()
+    print(y)
+
+11. Write a Python program to convert a tuple into a List.
+
+    Data:    x = (1,2,3,4,5)
+
+    Expected Output:
+    (1, 2, 3, 4, 5)
+    [1, 2, 3, 4, 5] 
+   
+    y=list(x)
+    print(y) 
+
+
+12. Write a Python program to print the numbers of a specified list after removing even numbers from it.
+
+    Data:    x = [7, 8, 120, 25, 44, 20, 27]
+    Expected Output:
+    [7, 25, 27] 
+    
+    odd=[]
+    for i in x:
+
+       if i%2!=0:
+          odd.append(i)
+    print(odd) 
+
+13. Write a Python program to shuffle and print a specified list. 
+
+    Data:    x = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+
+    Expected Output:
+    ['Pink', 'Black', 'Red', 'Yellow', 'White', 'Green'] 
+    
+    y=set(x)
+    z=list(y)
+    print(z)
+
+
+14. Write a Python program to append the second list to the first list.
+
+    Data:
+    x = [1, 2, 3, 0]
+    y = ['Red', 'Green', 'Black']
+
+    Expected Output:
+    [1, 2, 3, 0, 'Red', 'Green', 'Black'] 
+    
+    x.extend(y)
+    print(x)
+
+15. Write a Python program to select an item randomly from a list.
+
+    Data:    x = ['Red', 'Blue', 'Green', 'White', 'Black']
+
+    Expected Output:    White 
+
+    print(x[3])
+
+16. Write a Python program to get unique values from a list.
+
+    Data:
+    Original List :  [10, 20, 30, 40, 20, 50, 60, 40]
+
+    Expected Output:
+    List of unique numbers :  [40, 10, 50, 20, 60, 30] 
+    
+    x = [10, 20, 30, 40, 20, 50, 60, 40]
+    unique = []
+    for i in x:
+       if i not in unique:
+          unique.append(i)
+    print(unique)
+             
+      
+
+
+17. Write a Python program to get variable unique identification number or string.
+
+    Data:
+    var1 = 'Python'
+    var2 = 123
+
+    Expected Output:
+    186756869b0
+    7ffea3a83660 
+    
+    id(var1)
+    id(var2)  
+
+
+18. Write a Python program to print common elements from two lists using set().
+
+    Data:
+    x = (\"Red\", \"Green\", \"Orange\", \"White\")
+    y = (\"Black\", \"Green\", \"White\", \"Pink\")
+
+    Expected Output:
+    {'White', 'Green'}
+    
+    common = set(x) & set(y)
+    print(common)
+
+19. Write a Python program to convert a list of multiple integers into a single integer.
+
+    Data:
+    x = [11, 22, 33]
+
+    Expected Output:
+    112233 
+     
+       
+
+
+20. Write a Python program to create multiple lists.
+
+    Data:
+    x = {}
+
+    Expected Output:
+    {'1': [], '2': [], '3': [], '4': [], '5': [], '6': [], '7': [], '8': [], '9': []} 
+    
+
+    
+ 
+
+
+
+
